@@ -1,0 +1,115 @@
+body {
+    margin: 0;
+    font-family: 'Inter', sans-serif;
+    font-size: 14px;
+    color: #73808D;
+    background-color:#FEDB25;
+}  
+
+*,
+*:before,
+*:after {
+        box-sizing: border-box;
+}
+
+h1, h2, h3, h4, h5, h6, p{
+    margin: 0;
+}
+
+/* Container */
+.main__container{
+    margin: 0 auto;
+    overflow: hidden;
+    border-top: 4px solid #101214;
+    border-radius: 3px;
+    height: 842px;
+    max-width: 595px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    background: #fff;
+}
+
+/* User information */
+.user__info{
+    display: flex;
+    flex-flow: column wrap;
+    height: 68px;
+    margin: 30px 0px 0px 48px;
+}
+
+.your__name{
+    color: #101214;
+    line-height: 28px;
+    font-size: 24px;
+}
+
+.professional{
+    color: #101214;
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 28px;
+}
+
+.your__photo{
+    margin-left: 97px;
+}
+
+/* Jobs information */
+.jobs__info{
+    display: inline-flex;
+    flex-flow: column wrap;
+    float: left;
+    margin-top: 22px;
+    margin-left: 48px;
+    width: 100%;
+    max-width: 340px;
+}
+
+.sub__text{
+    text-transform: uppercase;
+    font-weight: 500;
+    font-size: 8px;
+    line-height: 18px;
+}
+
+.sub__prof{
+    font-weight: 700;
+    font-size: 11px;
+    line-height: 18px;
+    color: #101214;
+}
+
+.sub__name{
+    font-weight: 400;
+    font-size: 11px;
+    line-height: 18px;
+    color: #101214;
+}
+
+.sub__date{
+    font-weight: 400;
+    font-size: 9px;
+    line-height: 18px;
+}
+
+.main__text{
+    font-weight: 400;
+    font-size: 11px;
+    line-height: 18px;
+    color: #101214;
+}
+
+/* Your information */
+.your__info{
+    display: inline-block;
+    width: 100%;
+    max-width: 140px;
+    margin-left: 24px;
+    margin-top: 22px;
+}
+
+.your__info-text{
+    font-weight: 400;
+    font-size: 11px;
+    line-height: 18px;
+}
