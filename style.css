@@ -1,115 +1,141 @@
-body {
+body{
+    background-image: linear-gradient(120deg, #d6d6d6, #b37a7f);
+    color: white;
+    font-family: 'Poppins', sans-serif;
+    min-height: 100vh;
+}
+
+*{
     margin: 0;
-    font-family: 'Inter', sans-serif;
-    font-size: 14px;
-    color: #73808D;
-    background-color:#FEDB25;
-}  
-
-*,
-*:before,
-*:after {
-        box-sizing: border-box;
+    padding: 0;
+    box-sizing: border-box;
 }
 
-h1, h2, h3, h4, h5, h6, p{
-    margin: 0;
+header{
+    font-size: 1.5rem;
 }
 
-/* Container */
-.main__container{
-    margin: 0 auto;
-    overflow: hidden;
-    border-top: 4px solid #101214;
-    border-radius: 3px;
-    height: 842px;
-    max-width: 595px;
-    margin-top: 20px;
-    margin-bottom: 20px;
-    background: #fff;
-}
-
-/* User information */
-.user__info{
+header, 
+form{
+    min-height: 20vh;
     display: flex;
-    flex-flow: column wrap;
-    height: 68px;
-    margin: 30px 0px 0px 48px;
+    justify-content: center;
+    align-items: center;
 }
 
-.your__name{
-    color: #101214;
-    line-height: 28px;
-    font-size: 24px;
+form input,
+form button{
+    padding: 0.5rem;
+    font-size: 2rem;
+    border: none;
+    background: white;
 }
 
-.professional{
-    color: #101214;
-    font-size: 18px;
-    font-weight: 400;
-    line-height: 28px;
+form button{
+    color: #bc4558;
+    background: white;
+    cursor: pointer;
+    transition: all 0.3s ease;
 }
 
-.your__photo{
-    margin-left: 97px;
+form button:hover{
+    color: white;
+    background: #bc4558;
 }
 
-/* Jobs information */
-.jobs__info{
-    display: inline-flex;
-    flex-flow: column wrap;
-    float: left;
-    margin-top: 22px;
-    margin-left: 48px;
-    width: 100%;
-    max-width: 340px;
+.fas {
+}
+.fa-plus-square {
+}
+.todo__container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.todo-list {
+    min-width: 30%;
+    list-style: none;
+}
+.todo {
+    margin: 0.5rem;
+    background: white;
+    color: black;
+    font-size: 1.5rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    transition: all 0.5s ease;
 }
 
-.sub__text{
-    text-transform: uppercase;
-    font-weight: 500;
-    font-size: 8px;
-    line-height: 18px;
+.todo li{
+    flex: 1;
 }
 
-.sub__prof{
-    font-weight: 700;
-    font-size: 11px;
-    line-height: 18px;
-    color: #101214;
+.trash-btn, .complete-btn{
+    background: #bc4558;
+    color: white;
+    border: none;
+    padding: 1rem;
+    cursor: pointer;
+    font-size: 1rem;
 }
 
-.sub__name{
-    font-weight: 400;
-    font-size: 11px;
-    line-height: 18px;
-    color: #101214;
+.complete-btn{
+    background: #5dbc45;
 }
 
-.sub__date{
-    font-weight: 400;
-    font-size: 9px;
-    line-height: 18px;
+.todo-item{
+    padding: 0rem 0.5rem;
 }
 
-.main__text{
-    font-weight: 400;
-    font-size: 11px;
-    line-height: 18px;
-    color: #101214;
+.fa-trash, 
+.fa-check{
+    pointer-events: none;
 }
 
-/* Your information */
-.your__info{
-    display: inline-block;
-    width: 100%;
-    max-width: 140px;
-    margin-left: 24px;
-    margin-top: 22px;
+.completed{
+    text-decoration: line-through;
+    opacity: 0.5;
 }
 
-.your__info-text{
-    font-weight: 400;
-    font-size: 11px;
-    line-height: 18px;
+.fall{
+    transform: translateY(8rem) rotateZ(20deg);
+    opacity: 0;
+}
+
+select{
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    outline: none;
+    border: none;
+}
+
+.select{
+    margin: 1rem;
+    position: relative;
+    overflow: hidden;
+}
+
+select{
+    color: #bc4558;
+    width: 10rem;
+    cursor: pointer;
+    padding: 1rem;
+}
+
+.select::after{
+    content: "\25BC";
+    position: absolute;
+    background: #bc4558;
+    top: 0;
+    right: 0;
+    padding: 1rem;
+    pointer-events: none;
+    transition: all 0.3s ease;
+}
+
+.select:hover::after{
+    background: white;
+    color: #bc4558;
 }
